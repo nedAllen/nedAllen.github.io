@@ -1,11 +1,11 @@
 ---
-title: 장기 게임 개발기
-permalink: /janggi/
+title: ML 노트
+permalink: /ml/
 ---
 
 ## 글 목록
 
-{% assign posts = site.categories.janggi | sort: "date" | reverse %}
+{% assign posts = site.categories.ml | sort: "date" | reverse %}
 {% for post in posts %}
 - [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%Y-%m-%d" }})
 {% endfor %}
