@@ -3,6 +3,7 @@ title: "MathJax 수식 렌더링 테스트"
 date: 2025-12-27
 categories: [notes]
 tags: [mathjax, latex, test]
+visibility: private
 ---
 
 이 글은 **LaTeX 수식 렌더링 테스트용**이다.
