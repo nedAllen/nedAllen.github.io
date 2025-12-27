@@ -1,8 +1,9 @@
 {% comment %} Custom head overrides {% endcomment %}
 
-<!-- Minima 기본 head 내용 유지하려면 include를 덮어쓰지 않는 방식이 더 좋은데,
-     GitHub Pages에서 minima 내부 head를 직접 include하기가 애매해서,
-     실무에선 아래처럼 필요한 것만 추가하고, 타이틀/메타는 layout이 처리하게 둡니다. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
 <!-- MathJax v3 -->
 <script>
