@@ -1,0 +1,19 @@
+{% comment %} Custom head overrides {% endcomment %}
+
+<!-- Minima 기본 head 내용 유지하려면 include를 덮어쓰지 않는 방식이 더 좋은데,
+     GitHub Pages에서 minima 내부 head를 직접 include하기가 애매해서,
+     실무에선 아래처럼 필요한 것만 추가하고, 타이틀/메타는 layout이 처리하게 둡니다. -->
+
+<!-- MathJax v3 -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
