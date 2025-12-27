@@ -2,3 +2,6 @@ title: Ned's Blog
 description: notes on AI / ML / systems
 theme: minima
 show_future: true
+header_pages:
+  - janggi.md
+  - about.md
