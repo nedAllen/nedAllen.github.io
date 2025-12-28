@@ -7,7 +7,7 @@ permalink: /janggi/
 
 {% assign posts = site.categories.janggi | sort: "date" | reverse %}
 {% for post in posts %}
-  {% if post.visibility == "private" %}
+  {% if post.visibility != "private" %}
 - [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%Y-%m-%d" }})
   {% endif %}
 {% endfor %}
